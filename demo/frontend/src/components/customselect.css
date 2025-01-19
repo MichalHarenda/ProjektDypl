@@ -1,0 +1,45 @@
+.custom-select {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px; /* Adjust width as needed */
+}
+
+.school-container {
+    margin-bottom: 10px;
+}
+
+.school-button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.levels-container {
+    padding-left: 15px;
+}
+
+.level-container {
+    margin-bottom: 5px;
+}
+
+.level-label {
+    font-weight: bold;
+}
+
+.custom-select ul {
+    list-style: none;
+    padding: 0;
+}
+
+.custom-select li {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.custom-select li:hover {
+    background-color: #f0f0f0;
+}

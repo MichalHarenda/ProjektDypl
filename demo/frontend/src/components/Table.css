@@ -1,0 +1,128 @@
+
+/* Default Table Style */
+label{
+    margin-left: 20px; /* or use padding */
+}
+table {
+    color: #333;
+    background: white;
+    border: 1px solid grey;
+    font-size: 10pt;
+    border-collapse: collapse;
+}
+table thead th,
+table tfoot th {
+    color: #777;
+    background: rgba(0,0,0,.1);
+}
+table caption {
+    padding:.5em;
+}
+table th,
+table td {
+    padding: .5em;
+
+    border: 2px solid lightgrey;
+   max-inline-size: 500px;
+    /*
+      overflow-wrap: break-word;*/
+}
+.summary-cell {
+    max-height: 250px; /* Set your desired max height */
+    width: 200px; /* Set your desired max height */
+    overflow-x: hidden;
+    overflow-y: scroll;  /* Enables vertical scrolling */
+    display: block;     /* Allows the max-height property to work correctly */
+    white-space: pre-wrap; /* Preserves whitespace in the content */
+}
+.whatever-cell {
+    width: 200px; /* Set your desired max height */
+    overflow-y: scroll;  /* Enables vertical scrolling */
+    display: block;     /* Allows the max-height property to work correctly */
+    white-space: pre-wrap; /* Preserves whitespace in the content */
+}
+.what-cell {
+    width: 200px; /* Set your desired max height */
+    display: block;     /* Allows the max-height property to work correctly */
+    overflow-wrap: break-word;
+}
+.wh-cell {
+    width: 50px; /* Set your desired max height */
+}
+
+/*.highlighted-trait {
+    font-weight: bold;
+    cursor: help; !* Indicate that it's a tooltip *!
+}*/
+
+
+.highlighted-trait {
+    position: relative;
+    cursor: pointer;
+    color: blue; /* Default highlight color */
+    font-style: italic;
+    text-decoration-line: underline;
+    font-weight: normal;
+}
+
+.highlighted-trait:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+
+}
+.normal{
+    color: #282c34;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 400px;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%; /* Position above the element */
+    left: 50%;
+    margin-left: -200px; /* Centers the tooltip */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.content-bubble{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 1px solid lightgray;
+    padding: 8px;
+    border-radius: 4px;
+
+/*    marginBottom: '10px', border: '1px solid lightgrey',
+    padding: '8px',
+    borderRadiuscontentStyle: '4px',*/
+}
+.spell-content-bubble{
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+
+    /*    marginBottom: '10px', border: '1px solid lightgrey',
+        padding: '8px',
+        borderRadiuscontentStyle: '4px',*/
+}
+.separated-data {
+     margin-bottom: 10px;
+     border: 1px solid lightgrey;
+     padding: 8px;
+     border-radius: 4px;
+ }
+.error-message {
+      color: red;
+
+      font-size: 0.8em; /* Adjust font size as needed */
+      display: inline; /* Makes the error message appear on a new line */
+      margin-top: 2px; /* Add some spacing above the error message */
+  }

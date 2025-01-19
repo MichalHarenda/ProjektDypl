@@ -1,0 +1,111 @@
+.multi-dropdown-container {
+    display: inline ;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if the container is too narrow */
+    gap: 10px; /* Optional: Space between dropdowns */
+    margin-bottom: 10px; /* Space below the container */
+    margin-right: 10px;
+}
+
+.multi-dropdown-item {
+    display: inline-grid;
+    align-items: center; /* To vertically align the label and the dropdown */
+}
+
+.dyna{
+    font-size: 25px;
+    display: inline-table;
+}
+
+.custom-select .level-option { /* More specific selector */
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.dropdown {
+    max-height: 15px;    /* Maximum height for the dropdown */
+    overflow-y: auto;    /* Enable vertical scrollbar */
+    /* Optional styling */
+    /* width: 100%;       /* Make the dropdown full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.options {
+    display: block;
+    font-size: 20px;
+
+}
+
+.options.open {
+    display: block; /* Show the dropdown */
+}
+
+.option {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #f0f0f0; /* Highlight on hover */
+}
+
+.add-custom {
+    font-weight: bold;
+    color: green;  /* Differentiate custom add option */
+}
+
+.dropdown-container {
+    position: relative; /* Position relative to contain absolute children */
+}
+
+.dropdown-select {
+    width: 100%; /* Make the select full width */
+}
+
+.dropdown-select option {
+    padding: 8px; /* Add space within each option */
+}
+
+/* Style for customizing the dropdown menu */
+.dropdown-select {
+    max-height: 150px; /* Set maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    padding: 5px;
+    border: 1px solid grey;
+    cursor: pointer;
+    width: 100%;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background: white;
+    border: 1px solid grey;
+    z-index: 1;
+    max-height: 200px; /* Set a maximum height */
+    overflow-y: auto;   /* Scrollable if content exceeds max height */
+    margin-top: 2px;    /* Space from the toggle */
+    width: 200%;         /* Match width to toggle */
+}
+
+.dropdown-menu ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;             /* Remove default margin */
+    padding: 0;            /* Remove default padding */
+}
+
+.dropdown-menu li {
+    padding: 8px;          /* Space inside list items */
+    cursor: pointer;       /* Change cursor to pointer */
+}
+
+.dropdown-menu li:hover {
+    background-color: #f1f1f1; /* Highlight on hover */
+}
