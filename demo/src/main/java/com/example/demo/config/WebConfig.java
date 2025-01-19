@@ -9,8 +9,12 @@ public class WebConfig implements WebMvcConfigurer{
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("http://localhost:3000", "http://13.60.28.67:3000", "http://13.60.28.67:8080", "http://13.60.28.67:8000","http://ec2-13-60-28-67.eu-north-1.compute.amazonaws.com:3000","http://ec2-13-60-28-67.eu-north-1.compute.amazonaws.com:8080","http://ec2-13-60-28-67.eu-north-1.compute.amazonaws.com:8000", "http://fantastycznasesja.pl", "http://www.fantastycznasesja.pl",
-                        "https://localhost:3000", "https://13.60.28.67:3000", "https://13.60.28.67:8080", "https://13.60.28.67:8000","https://ec2-13-60-28-67.eu-north-1.compute.amazonaws.com:3000","https://ec2-13-60-28-67.eu-north-1.compute.amazonaws.com:8080","https://ec2-13-60-28-67.eu-north-1.compute.amazonaws.com:8000", "https://fantastycznasesja.pl", "https://www.fantastycznasesja.pl")
+                .allowedOrigins("http://localhost:3000", "http://16.171.161.151:3000", "http://16.171.161.151:8080", "http://16.171.161.151:8000",
+                                "http://ec2-16-171-161-151.eu-north-1.compute.amazonaws.com:3000","http://ec2-16-171-161-151.eu-north-1.compute.amazonaws.com:8080",
+                                "http://ec2-16-171-161-151.eu-north-1.compute.amazonaws.com:8000", "http://fantastycznasesja.pl", "http://www.fantastycznasesja.pl",
+                        "https://localhost:3000", "https://16.171.161.151:3000", "https://16.171.161.151:8080", "https://16.171.161.151:8000",
+                                "https://ec2-16-171-161-151.eu-north-1.compute.amazonaws.com:3000","https://ec2-16-171-161-151.eu-north-1.compute.amazonaws.com:8080",
+                                "https://ec2-16-171-161-151.eu-north-1.compute.amazonaws.com:8000", "https://fantastycznasesja.pl", "https://www.fantastycznasesja.pl")
                 .allowedMethods("*")
                 .allowedHeaders("*")
                 .allowCredentials(true);
